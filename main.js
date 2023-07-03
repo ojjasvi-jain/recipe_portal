@@ -1,6 +1,8 @@
 import "./style.css";
 
-// const searchBtn = document.getElementById("search-btn");
+// API endpoint
+const RECIPIE_API = "https://www.themealdb.com/api/json/v1/1/filter.php";
+
 const mealList = document.getElementById("meal");
 const mealDetailsContent = document.querySelector(".meal-details-content");
 const recipeCloseBtn = document.getElementById("recipe-close-btn");
@@ -8,14 +10,16 @@ const searchInput = document.getElementById("search-input");
 const titleElement = document.getElementById("title");
 
 // event listeners
-// searchBtn.addEventListener("click", getMealList);
 searchInput.addEventListener("change", getMealList);
 mealList.addEventListener("click", getMealRecipe);
 recipeCloseBtn.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("showRecipe");
 });
 
-getMealList();
+//project intiator
+window.addEventListener("load", () => {
+  getMealList();
+});
 
 // get meal list that matches with the ingredients
 function getMealList() {
@@ -23,10 +27,10 @@ function getMealList() {
   let searchInputTxt = document.getElementById("search-input").value.trim();
   if (searchInputTxt === "") {
     titleElement.innerText = "Here is random recipe...";
-    url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`;
+    url = `${RECIPIE_API}?i=${searchInputTxt}`;
   } else {
     titleElement.innerText = "Your Search Results:";
-    url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${searchInputTxt}`;
+    url = `${RECIPIE_API}?c=${searchInputTxt}`;
   }
   fetch(url)
     .then((response) => response.json())
@@ -49,6 +53,10 @@ function getMealList() {
         mealList.classList.remove("notFound");
       }
       mealList.innerHTML = html;
+    })
+    .catch((error) => {
+      titleElement.innerText = "Please try again 😕";
+      console.error("Error message: " + error);
     });
 }
 
