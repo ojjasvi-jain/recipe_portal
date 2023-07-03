@@ -10,10 +10,10 @@ The application consists of a homepage and a "My Recipes" page. On the homepage,
 The main goal of this project is to apply knowledge of Promises and the Fetch API in JavaScript to create a responsive and interactive recipe search application.
 
 # Technologies Used
--JavaScript
--HTML
--CSS (Mobile-first approach, BEM methodology)
--Vite Bundler
+- JavaScript
+- HTML
+- CSS (Mobile-first approach, BEM methodology)
+- Vite Bundler
 
 
 #Features
