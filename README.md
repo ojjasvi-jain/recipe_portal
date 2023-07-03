@@ -28,3 +28,12 @@ The main goal of this project is to apply knowledge of Promises and the Fetch AP
   
 # demo link
 https://glistening-sfogliatella-a2750d.netlify.app/
+
+## ScreenShot 
+
+ - Home Page 
+![image](https://github.com/ojjasvi-jain/recipe_portal/assets/85935892/4155cbc5-3bfe-4fdf-b368-f4e64d80af38)
+
+- Recipe Instruction Popup
+![image](https://github.com/ojjasvi-jain/recipe_portal/assets/85935892/5b11ba8b-ecae-42c8-a5b5-6990c17175da)
+
