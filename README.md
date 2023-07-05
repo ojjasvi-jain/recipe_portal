@@ -33,8 +33,8 @@ https://glistening-sfogliatella-a2750d.netlify.app/
 # API 
 https://www.themealdb.com/api.php
 
-https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian
-https://www.themealdb.com/api/json/v1/1/list.php?c=list
+1. https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian
+2. https://www.themealdb.com/api/json/v1/1/list.php?c=list
 
 
 ## ScreenShot 
