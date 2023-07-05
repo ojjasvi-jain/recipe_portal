@@ -29,6 +29,14 @@ The main goal of this project is to apply knowledge of Promises and the Fetch AP
 # demo link
 https://glistening-sfogliatella-a2750d.netlify.app/
 
+
+# API 
+https://www.themealdb.com/api.php
+
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian
+https://www.themealdb.com/api/json/v1/1/list.php?c=list
+
+
 ## ScreenShot 
 
  - Home Page 
